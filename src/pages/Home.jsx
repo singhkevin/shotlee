@@ -37,20 +37,47 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <div className="hero-background">
+          <iframe
+            className="hero-video hero-video-desktop"
+            src="https://player.vimeo.com/video/1163717872?autoplay=1&loop=1&muted=1&background=1"
+            title="Hero background (desktop)"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          />
+          <iframe
+            className="hero-video hero-video-tablet"
+            src="https://player.vimeo.com/video/1163723727?autoplay=1&loop=1&muted=1&background=1"
+            title="Hero background (tablet)"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          />
+          <iframe
+            className="hero-video hero-video-mobile"
+            src="https://player.vimeo.com/video/1163721098?autoplay=1&loop=1&muted=1&background=1"
+            title="Hero background (mobile)"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          />
+          <div className="hero-background-fallback" aria-hidden="true" />
+          <div className="hero-background-overlay" aria-hidden="true" />
+        </div>
         <div className="hero-content">
           <h1 className="hero-headline">
             Meet The Greatest Photographer In Human History - You!
           </h1>
           <div className="hero-cta-group">
             <Link to="/#pricing" className="cta-primary" onClick={(e) => scrollToSection(e, 'pricing')}>
-              TRY NOW – 10 FREE SHOTS
+              TRY NOW – 5 FREE SHOTS
             </Link>
             <a href="#proposition" className="cta-secondary banner-btn" onClick={(e) => { e.preventDefault(); scrollToSection(e, 'proposition'); }}>
               See how it works
             </a>
           </div>
         </div>
-        <div className="hero-background" />
       </section>
 
       <section id="proposition" className="proposition fade-in" ref={(el) => (sectionRefs.current[0] = el)}>

@@ -112,13 +112,91 @@ body {
     justify-content: center;
     position: relative;
     padding: 8rem 2rem 12rem;
-    background: linear-gradient(135deg, var(--color-gray-light) 0%, var(--color-white) 100%);
     overflow: hidden;
     isolation: isolate;
+}
+
+/* Video background (default) with image fallback */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+/* Hero video: same “cover” behavior as background image at any size */
+.hero-background .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* 16:9 – Desktop (default); oversize to avoid fallback showing at any resolution */
+.hero-video-desktop {
+    display: block;
+    width: 105vw;
+    height: 59vw;
+    min-height: 105vh;
+    min-width: 187vh;
+}
+
+.hero-video-tablet,
+.hero-video-mobile {
+    display: none;
+}
+
+/* 1:1 – Tablet / miscellaneous */
+@media (max-width: 1024px) {
+    .hero-video-desktop {
+        display: none;
+    }
+
+    .hero-video-tablet {
+        display: block;
+        width: 108vmax;
+        height: 108vmax;
+    }
+
+    .hero-video-mobile {
+        display: none;
+    }
+}
+
+/* 9:16 – Phone */
+@media (max-width: 768px) {
+    .hero-video-desktop,
+    .hero-video-tablet {
+        display: none;
+    }
+
+    .hero-video-mobile {
+        display: block;
+        width: 57.5vh;
+        height: 102vh;
+        min-width: 102vw;
+        min-height: 181vw;
+    }
+}
+
+.hero-background-fallback {
+    position: absolute;
+    inset: 0;
     background-image: url('/assets/banner-1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.hero-background-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .banner-btn {
@@ -157,6 +235,13 @@ body {
 .hero .hero-headline {
     margin-bottom: 0;
     animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
+    text-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.4),
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        0 0 40px rgba(255, 215, 0, 0.15),
+        0 0 80px rgba(255, 215, 0, 0.08);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+    paint-order: stroke fill;
 }
 
 .hero-cta-group {
