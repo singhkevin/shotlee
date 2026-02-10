@@ -25,6 +25,10 @@
 
     --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-fast: 0.2s ease;
+
+    /* Layout */
+    --header-height-desktop: 56px;
+    --header-height-mobile: 48px;
 }
 
 html {
@@ -104,16 +108,21 @@ body {
     font-style: italic;
 }
 
-/* Hero Section */
+/* Hero Section
+   Combined header + hero height ≈ 100vh.
+   Hero takes full viewport height minus header height variable. */
 .hero {
-    min-height: 100vh;
+    height: calc(100vh - var(--header-height-desktop));
+    max-height: calc(100vh - var(--header-height-desktop));
+    min-height: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 8rem 2rem 12rem;
+    padding: 6rem 2rem 2rem;
     overflow: hidden;
     isolation: isolate;
+    box-sizing: border-box;
 }
 
 /* Video background (default) with image fallback */
@@ -657,14 +666,32 @@ section {
     font-style: italic;
 }
 
-/* Use Cases */
+/* Use Cases – entire section fits in 100vh */
 .use-cases {
     background: var(--color-gray-light);
-    padding: 9rem 0 8rem;
+    height: 100vh;
+    max-height: 100vh;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.use-cases .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }
 
 .use-cases .section-headline {
-    margin-bottom: 4rem;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
+}
+
+.use-cases .body-large {
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
 }
 
 .use-cases-grid {
@@ -730,7 +757,7 @@ section {
 .legal-header {
     background: var(--color-white);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    padding: 2rem 0;
+    padding: 0.75rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -1085,9 +1112,14 @@ section {
         padding: 0 1.5rem;
     }
 
+    .legal-header {
+        padding: 0.5rem 0;
+    }
+
     .hero {
-        min-height: 90vh;
-        padding: 4rem 1.5rem 6rem;
+        height: calc(100vh - var(--header-height-mobile));
+        max-height: calc(100vh - var(--header-height-mobile));
+        padding: 4rem 1.5rem 2rem;
         background-position: center top;
     }
 
@@ -1327,34 +1359,48 @@ section {
     }
 }
 
-/* Comparison Gallery */
-.comparison-grid {
+/* Comparison Gallery – fills remaining space inside use-cases (100vh) */
+.use-cases .comparison-grid {
+    flex: 1;
+    min-height: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 0.5rem;
+    margin: 0.75rem 0 0;
 }
 
-@media (min-width: 1024px) {
-    .comparison-grid {
+@media (min-width: 769px) {
+    .use-cases .comparison-grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
     }
 }
 
 .comparison-item {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
+    min-height: 0;
+}
+
+.use-cases .comparison-item {
+    height: 100%;
 }
 
 .comparison-image-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 4/5;
     overflow: hidden;
     cursor: ew-resize;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.use-cases .comparison-image-container {
+    flex: 1;
+    min-height: 0;
+    height: 100%;
 }
 
 .comparison-image-container img {
