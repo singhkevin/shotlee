@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancement Codes — Shot Lee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Header -->
+    <header class="legal-header">
+        <div class="container">
+            <a href="index.html" class="legal-logo">
+                <img src="assets/14.png" alt="Shot Lee" class="logo-small">
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header-nav" id="main-nav">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="enhancement-codes.html">Pic Options</a>
+                <a href="help.html">Help</a>
+                <a href="terms.html">Terms & Privacy</a>
+                <div class="mobile-social-links">
+                    <a href="https://instagram.com/shotlee" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/@shotlee" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/shotlee" target="_blank" rel="noopener noreferrer" aria-label="X">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+            <div class="social-links desktop-social">
+                <a href="https://instagram.com/shotlee" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="https://tiktok.com/@shotlee" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/shotlee" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Enhancement Codes Content -->
+    <main class="legal-content">
+        <div class="container">
+            <div class="legal-wrapper">
+                <h1 class="legal-title">Pic Options</h1>
+
+                <div class="legal-intro">
+                    <p>Shot Lee's Enhancement Codes unlock specific aesthetic styles and professional looks. Each code
+                        applies a curated set of enhancements designed to achieve a particular visual effect. With over
+                        1,000 codes available, you can transform your images to match your exact vision.</p>
+                </div>
+
+                <section class="legal-section">
+                    <h2 class="legal-section-title">How Enhancement Codes Work</h2>
+                    <p class="legal-paragraph">When you submit an image to Shot Lee, you can optionally specify an
+                        Enhancement Code. Our AI system will apply that code's unique combination of color grading,
+                        contrast adjustments, lighting effects, and compositional refinements to create a specific
+                        aesthetic.</p>
+                    <p class="legal-paragraph">If no code is specified, Shot Lee automatically generates four distinct
+                        professional interpretations, each optimized for different use cases and styles.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section-title">Enhancement Codes List</h2>
+
+                    <h3 class="legal-subsection-title">Official Headshots</h3>
+                    <ul class="legal-list">
+                        <li>Professional corporate headshot with neutral background <strong>#10001</strong></li>
+                        <li>LinkedIn-style portrait with office backdrop <strong>#10002</strong></li>
+                        <li>Executive portrait in business attire <strong>#10003</strong></li>
+                        <li>Law firm partner professional photo <strong>#10004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Social Media and personal branding</h3>
+                    <ul class="legal-list">
+                        <li>Instagram-worthy aesthetic portrait <strong>#20001</strong></li>
+                        <li>TikTok profile picture with trendy filters <strong>#20002</strong></li>
+                        <li>YouTube thumbnail-style dramatic pose <strong>#20003</strong></li>
+                        <li>Twitter/X professional casual headshot <strong>#20004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Editorial Headshots</h3>
+                    <ul class="legal-list">
+                        <li>Magazine feature portrait with dramatic lighting <strong>#30001</strong></li>
+                        <li>Author bio photo for book jacket <strong>#30002</strong></li>
+                        <li>Journalist byline professional photo <strong>#30003</strong></li>
+                        <li>Artist/creator portfolio headshot <strong>#30004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Fashion shoots</h3>
+                    <ul class="legal-list">
+                        <li>High-fashion runway model pose <strong>#40001</strong></li>
+                        <li>Street style photography aesthetic <strong>#40002</strong></li>
+                        <li>Vogue-inspired editorial shoot <strong>#40003</strong></li>
+                        <li>Designer lookbook feature <strong>#40004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Cinema Posters</h3>
+                    <ul class="legal-list">
+                        <li>Action movie hero poster <strong>#50001</strong></li>
+                        <li>Romantic comedy lead character <strong>#50002</strong></li>
+                        <li>Horror film protagonist <strong>#50003</strong></li>
+                        <li>Superhero blockbuster poster <strong>#50004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Red Carpet events</h3>
+                    <ul class="legal-list">
+                        <li>Oscar awards ceremony arrival <strong>#60001</strong></li>
+                        <li>Met Gala fashion moment <strong>#60002</strong></li>
+                        <li>Cannes Film Festival premiere <strong>#60003</strong></li>
+                        <li>Grammy Awards red carpet <strong>#60004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Addressing an audience</h3>
+                    <ul class="legal-list">
+                        <li>TED Talk speaker on stage <strong>#70001</strong></li>
+                        <li>Presidential podium address <strong>#70002</strong></li>
+                        <li>Corporate keynote presentation <strong>#70003</strong></li>
+                        <li>University graduation speech <strong>#70004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Holiday, action and adventure</h3>
+                    <ul class="legal-list">
+                        <li>Beach vacation paradise setting <strong>#80001</strong></li>
+                        <li>Mountain climbing expedition <strong>#80002</strong></li>
+                        <li>Safari wildlife adventure <strong>#80003</strong></li>
+                        <li>Skydiving action shot <strong>#80004</strong></li>
+                        <li>Scuba diving underwater scene <strong>#80005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Entertainment and media scenes</h3>
+                    <ul class="legal-list">
+                        <li>Sitcom family living room scene <strong>#90001</strong></li>
+                        <li>Talk show guest appearance <strong>#90002</strong></li>
+                        <li>Reality TV competition moment <strong>#90003</strong></li>
+                        <li>Netflix series dramatic scene <strong>#90004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Magazine Covers</h3>
+                    <ul class="legal-list">
+                        <li>Time Magazine Person of the Year <strong>#11001</strong></li>
+                        <li>Forbes billionaire feature cover <strong>#11002</strong></li>
+                        <li>Sports Illustrated athlete cover <strong>#11003</strong></li>
+                        <li>Vanity Fair celebrity feature <strong>#11004</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">With Celebrities and historical figures</h3>
+                    <ul class="legal-list">
+                        <li>Coffee with your favorite actor <strong>#12001</strong></li>
+                        <li>Shaking hands with the President <strong>#12002</strong></li>
+                        <li>Selfie with music icon <strong>#12003</strong></li>
+                        <li>Meeting historical leader like Gandhi <strong>#12004</strong></li>
+                        <li>Dinner with Einstein <strong>#12005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">At moments in history</h3>
+                    <ul class="legal-list">
+                        <li>Moon landing with astronauts <strong>#13001</strong></li>
+                        <li>Berlin Wall fall celebration <strong>#13002</strong></li>
+                        <li>Woodstock music festival 1969 <strong>#13003</strong></li>
+                        <li>Martin Luther King Jr.'s "I Have a Dream" speech <strong>#13004</strong></li>
+                        <li>First iPhone launch event <strong>#13005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">With Vehicles</h3>
+                    <ul class="legal-list">
+                        <li>Posing with luxury sports car <strong>#14001</strong></li>
+                        <li>Private jet boarding scene <strong>#14002</strong></li>
+                        <li>Motorcycle road trip <strong>#14003</strong></li>
+                        <li>Classic vintage car photoshoot <strong>#14004</strong></li>
+                        <li>Yacht on the ocean <strong>#14005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">With Animals</h3>
+                    <ul class="legal-list">
+                        <li>Cuddling with puppies <strong>#15001</strong></li>
+                        <li>Horseback riding adventure <strong>#15002</strong></li>
+                        <li>Swimming with dolphins <strong>#15003</strong></li>
+                        <li>Safari with lions and elephants <strong>#15004</strong></li>
+                        <li>Holding exotic birds <strong>#15005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">With imaginary characters</h3>
+                    <ul class="legal-list">
+                        <li>Standing next to Batman <strong>#16001</strong></li>
+                        <li>Tea party with Alice in Wonderland <strong>#16002</strong></li>
+                        <li>Battling dragons <strong>#16003</strong></li>
+                        <li>Meeting unicorns in enchanted forest <strong>#16004</strong></li>
+                        <li>Hanging out with Pokemon <strong>#16005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">At real and fictional locations</h3>
+                    <ul class="legal-list">
+                        <li>Eiffel Tower romantic photo <strong>#17001</strong></li>
+                        <li>Hogwarts castle grounds <strong>#17002</strong></li>
+                        <li>Times Square New York <strong>#17003</strong></li>
+                        <li>Atlantis underwater city <strong>#17004</strong></li>
+                        <li>Great Wall of China <strong>#17005</strong></li>
+                        <li>Gotham City rooftop <strong>#17006</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Apparel and fashion</h3>
+                    <ul class="legal-list">
+                        <li>Wearing designer wedding dress <strong>#18001</strong></li>
+                        <li>Trying on haute couture gown <strong>#18002</strong></li>
+                        <li>Modeling streetwear collection <strong>#18003</strong></li>
+                        <li>Traditional cultural attire <strong>#18004</strong></li>
+                        <li>Vintage 1920s flapper outfit <strong>#18005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Military</h3>
+                    <ul class="legal-list">
+                        <li>Army uniform official portrait <strong>#19001</strong></li>
+                        <li>Navy officer on ship deck <strong>#19002</strong></li>
+                        <li>Air Force pilot in cockpit <strong>#19003</strong></li>
+                        <li>Special forces tactical gear <strong>#19004</strong></li>
+                        <li>Military medal ceremony <strong>#19005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Body and age transformations</h3>
+                    <ul class="legal-list">
+                        <li>Fitness transformation before/after <strong>#21001</strong></li>
+                        <li>Age progression to elderly version <strong>#21002</strong></li>
+                        <li>Age regression to childhood <strong>#21003</strong></li>
+                        <li>Athletic bodybuilder physique <strong>#21004</strong></li>
+                        <li>Different hairstyle and hair color <strong>#21005</strong></li>
+                    </ul>
+
+                    <h3 class="legal-subsection-title">Fantasy and Sci-fi</h3>
+                    <ul class="legal-list">
+                        <li>Superhero with powers and cape <strong>#22001</strong></li>
+                        <li>Space explorer on alien planet <strong>#22002</strong></li>
+                        <li>Elf in magical forest <strong>#22003</strong></li>
+                        <li>Cyberpunk futuristic warrior <strong>#22004</strong></li>
+                        <li>Wizard casting spells <strong>#22005</strong></li>
+                        <li>Time traveler in steampunk gear <strong>#22006</strong></li>
+                    </ul>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section-title">Using Enhancement Codes</h2>
+                    <p class="legal-paragraph">Enhancement Codes can be entered when submitting images through the Shot
+                        Lee interface. Simply type or paste the code into the designated field before processing.</p>
+                    <p class="legal-paragraph"><strong>Format:</strong> Codes are typically alphanumeric strings (e.g.,
+                        "STUDIO-001", "GOLDEN-45", "MONO-DRAMA").</p>
+                    <p class="legal-paragraph"><strong>Multiple Codes:</strong> Some codes can be combined for hybrid
+                        effects. Check the code documentation for compatibility.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section-title">Discovering New Codes</h2>
+                    <p class="legal-paragraph">New Enhancement Codes are regularly added to our library. Follow us on
+                        social media for announcements of new codes and special collections. Premium subscribers receive
+                        early access to new codes and exclusive collections.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section-title">Code Library Access</h2>
+                    <p class="legal-paragraph">A comprehensive library of all available Enhancement Codes is available
+                        within your Shot Lee account dashboard. Codes are organized by category, style, and use case to
+                        help you find the perfect enhancement for your images.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section-title">Custom Enhancement Codes</h2>
+                    <p class="legal-paragraph">For commercial users and professional photographers, custom Enhancement
+                        Codes can be created to match your brand aesthetic or signature style. Contact <a
+                            href="mailto:commercial@shotlee.com" class="legal-link">commercial@shotlee.com</a> to
+                        discuss custom code development.</p>
+                </section>
+
+                <section class="legal-section">
+                    <h2 class="legal-section-title">Questions About Enhancement Codes?</h2>
+                    <p class="legal-paragraph">For technical questions about Enhancement Codes or assistance finding the
+                        right code for your needs, contact our support team at <a href="mailto:support@shotlee.com"
+                            class="legal-link">support@shotlee.com</a>.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="legal-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="enhancement-codes.html">Pic Options</a>
+                <a href="help.html">Help</a>
+                <a href="terms.html">Terms & Privacy</a>
+                <div class="mobile-social-links">
+                    <a href="https://instagram.com/shotlee" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/@shotlee" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/shotlee" target="_blank" rel="noopener noreferrer" aria-label="X">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+                <a href="refund.html">Refund Policy</a>
+                <a href="licensing.html">Licensing</a>
+            </nav>
+            <div class="footer-contact">
+                <a href="mailto:hello@shotlee.com">hello@shotlee.com</a>
+            </div>
+            <div class="social-links footer-social">
+                <a href="https://instagram.com/shotlee" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="https://tiktok.com/@shotlee" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/shotlee" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-tagline">Shot Lee — Never accept mediocrity again.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
