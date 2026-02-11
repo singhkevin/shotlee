@@ -7,7 +7,8 @@ const NAV_LINKS = [
   { to: '/contact', label: 'Contact' },
   { to: '/enhancement-codes', label: 'Pic Options' },
   { to: '/help', label: 'Help' },
-  { to: '/terms', label: 'Terms & Privacy' },
+  { to: '/terms', label: 'Terms & Conditions' },
+  { to: '/privacy', label: 'Privacy Policy' },
 ];
 
 export default function Header() {
