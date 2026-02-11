@@ -1251,8 +1251,8 @@ section {
         height: calc(100vh - var(--header-height-mobile));
         max-height: calc(100vh - var(--header-height-mobile));
         padding: 2rem 1.25rem 2rem;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         background-position: center top;
     }
 
