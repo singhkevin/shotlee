@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import ComparisonSlider from '../components/ComparisonSlider';
+import WhatsAppLogo from '../components/WhatsAppLogo';
 
 const COMPARISON_IMAGES = [
   { before: '/assets/Artboard 1.jpg', after: '/assets/Artboard 1B.jpg' },
@@ -77,6 +78,7 @@ export default function Home() {
               See how it works
             </a>
           </div>
+          <p className="hero-usp">No app to install — start instantly on <WhatsAppLogo height={28} className="hero-usp-logo" />.</p>
         </div>
       </section>
 
@@ -91,6 +93,9 @@ export default function Home() {
             </p>
             <p className="body-large">
               Send any photograph. Within moments, receive four professionally enhanced versions – each analyzed across 300 parameters and refined by algorithms trained on humanity's most iconic images.
+            </p>
+            <p className="body-large proposition-usp">
+              No app to download. Get started right away on <WhatsAppLogo height={26} className="proposition-usp-logo" />.
             </p>
             <p className="emphasis-line">Just perfection, instantly.</p>
           </div>
@@ -226,9 +231,9 @@ export default function Home() {
         <div className="container">
           <h2 className="section-headline">Start now.</h2>
           <p className="cta-subtext">
-            Ten free enhancements.
+            No app required — start instantly on <WhatsAppLogo height={28} className="final-cta-usp-logo" />.
             <br />
-            Experience photographic excellence.
+            Ten free enhancements. Experience photographic excellence.
           </p>
           <Link to="/#pricing" className="cta-primary cta-large" onClick={(e) => scrollToSection(e, 'pricing')}>
             BEGIN
