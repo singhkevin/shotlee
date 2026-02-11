@@ -1123,6 +1123,11 @@ section {
         background-position: center top;
     }
 
+    .hero-background-fallback {
+        background-image: url('/assets/Hero%20Fallback%20Mobile.jpg');
+        background-position: center center;
+    }
+
     .hero-headline {
         font-size: 48px;
     }
