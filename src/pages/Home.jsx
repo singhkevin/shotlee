@@ -71,12 +71,12 @@ export default function Home() {
             Meet The Greatest Photographer In Human History - You!
           </h1>
           <div className="hero-cta-group">
-            <Link to="/#pricing" className="cta-primary" onClick={(e) => scrollToSection(e, 'pricing')}>
-              TRY NOW – 5 FREE SHOTS
-            </Link>
-            <a href="#proposition" className="cta-secondary banner-btn" onClick={(e) => { e.preventDefault(); scrollToSection(e, 'proposition'); }}>
+<a href="#proposition" className="cta-secondary banner-btn" onClick={(e) => { e.preventDefault(); scrollToSection(e, 'proposition'); }}>
               See how it works
             </a>
+            <Link to="/wait" className="cta-secondary banner-btn">
+              Join Waiting List
+            </Link>
           </div>
           <p className="hero-usp">No app to install — start instantly on <WhatsAppLogo height={28} className="hero-usp-logo" />.</p>
         </div>
@@ -233,7 +233,7 @@ export default function Home() {
           <p className="cta-subtext">
             No app required — start instantly on <WhatsAppLogo height={28} className="final-cta-usp-logo" />.
             <br />
-            Ten free enhancements. Experience photographic excellence.
+            Five free enhancements. Experience photographic excellence.
           </p>
           <Link to="/#pricing" className="cta-primary cta-large" onClick={(e) => scrollToSection(e, 'pricing')}>
             BEGIN

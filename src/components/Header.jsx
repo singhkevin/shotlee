@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SocialLinks from './SocialLinks';
 
 const NAV_LINKS = [
+  { to: '/wait', label: 'Waiting List' },
   { to: '/about', label: 'About' },
   { to: '/contact', label: 'Contact' },
   { to: '/enhancement-codes', label: 'Pic Options' },

@@ -10,6 +10,8 @@ import Refund from './pages/Refund';
 import Licensing from './pages/Licensing';
 import Privacy from './pages/Privacy';
 import EnhancementCodes from './pages/EnhancementCodes';
+import NotFound from './pages/NotFound';
+import Waitlist from './pages/Waitlist';
 
 function ScrollToHash() {
   const { pathname, hash } = useLocation();
@@ -41,6 +43,8 @@ export default function App() {
           <Route path="licensing" element={<Licensing />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="enhancement-codes" element={<EnhancementCodes />} />
+          <Route path="wait" element={<Waitlist />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
