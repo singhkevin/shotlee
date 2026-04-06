@@ -1072,6 +1072,76 @@ section {
     margin: 5rem 0 3rem;
 }
 
+/* Pricing page (/pricing) — USD-only plan table */
+.pricing-page .pricing-page-section {
+    margin-bottom: 4rem;
+}
+
+.pricing-international-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 1.5rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+    background: var(--color-white);
+}
+
+.pricing-international-table {
+    width: 100%;
+    min-width: 28rem;
+    border-collapse: collapse;
+    font-size: 1.0625rem;
+}
+
+.pricing-international-caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 0.9375rem;
+    line-height: 1.45;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 0.875rem 1rem;
+    background: var(--color-gray-light);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-weight: 500;
+}
+
+.pricing-international-table thead th {
+    text-align: left;
+    padding: 0.875rem 1rem;
+    font-weight: 700;
+    background: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.pricing-international-table tbody td,
+.pricing-international-table tbody th[scope='row'] {
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+.pricing-international-table tbody th[scope='row'] {
+    text-align: left;
+    font-weight: 700;
+}
+
+.pricing-international-row--peach > th,
+.pricing-international-row--peach > td {
+    background: #fff5f0;
+}
+
+.pricing-international-row--sage > th,
+.pricing-international-row--sage > td {
+    background: #f0f8f4;
+}
+
+.pricing-international-footnote {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.82);
+}
+
 /* Enhancement Codes – tabbed categories, placed first on page */
 .enhancement-codes-section-first {
     margin-top: 0;

@@ -27,7 +27,7 @@ const FAQ_GROUPS = [
     items: [
       {
         q: 'How does the credit system work?',
-        a: 'Each enhancement uses one credit. New users get 5 free credits; additional packs are available (see pricing on this page).',
+        a: 'Each enhancement uses one credit. New users get 5 free credits; paid plans and packs will be available when the service opens.',
       },
       {
         q: 'Do credits expire?',

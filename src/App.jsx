@@ -6,6 +6,8 @@ import Terms from './pages/Terms';
 import Refund from './pages/Refund';
 import Licensing from './pages/Licensing';
 import Privacy from './pages/Privacy';
+import Pricing from './pages/Pricing';
+import PricingIndia from './pages/PricingIndia';
 import NotFound from './pages/NotFound';
 import Waitlist from './pages/Waitlist';
 
@@ -39,6 +41,8 @@ export default function App() {
           <Route path="refund" element={<Refund />} />
           <Route path="licensing" element={<Licensing />} />
           <Route path="privacy" element={<Privacy />} />
+          <Route path="pricing/in" element={<PricingIndia />} />
+          <Route path="pricing" element={<Pricing />} />
           <Route path="wait" element={<Waitlist />} />
           <Route path="*" element={<NotFound />} />
         </Route>

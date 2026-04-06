@@ -197,34 +197,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="pricing" className="pricing fade-in" ref={(el) => (sectionRefs.current[6] = el)}>
-        <div className="container">
-          <div className="pricing-wrapper">
-            <div className="pricing-header">
-              <h2 className="section-headline">Introductory one time offer</h2>
-            </div>
-            <div className="pricing-content">
-              <div className="pricing-main">
-                <div className="pricing-amount-wrapper">
-                  <span className="pricing-number">100</span>
-                  <span className="pricing-label">new images</span>
-                </div>
-                <div className="pricing-divider" />
-                <div className="pricing-price-wrapper">
-                  <div className="pricing-price-main">
-                    <span className="pricing-currency">$</span>
-                    <span className="pricing-price">29</span>
-                  </div>
-                  <p className="pricing-per-image">29 cents per image</p>
-                </div>
-              </div>
-              <p className="pricing-subtext">An introduction to what professional excellence should cost.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="privacy" className="privacy fade-in" ref={(el) => (sectionRefs.current[7] = el)}>
+      <section id="privacy" className="privacy fade-in" ref={(el) => (sectionRefs.current[6] = el)}>
         <div className="container">
           <div className="privacy-wrapper">
             <h2 className="section-headline">Your Privacy, Absolute</h2>
@@ -263,13 +236,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="help" className="landing-faq fade-in" ref={(el) => (sectionRefs.current[8] = el)}>
+      <section id="help" className="landing-faq fade-in" ref={(el) => (sectionRefs.current[7] = el)}>
         <div className="container">
           <HelpFaqSection />
         </div>
       </section>
 
-      <section id="contact" className="landing-contact fade-in" ref={(el) => (sectionRefs.current[9] = el)}>
+      <section id="contact" className="landing-contact fade-in" ref={(el) => (sectionRefs.current[8] = el)}>
         <div className="container">
           <div className="proposition-content">
             <h2 className="section-headline">Contact</h2>
@@ -284,7 +257,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="final-cta fade-in" ref={(el) => (sectionRefs.current[10] = el)}>
+      <section className="final-cta fade-in" ref={(el) => (sectionRefs.current[9] = el)}>
         <div className="container">
           <h2 className="section-headline">Start now.</h2>
           <p className="cta-subtext">
@@ -292,8 +265,8 @@ export default function Home() {
             <br />
             Five free enhancements. Experience photographic excellence.
           </p>
-          <Link to="/#pricing" className="cta-primary cta-large" onClick={(e) => scrollToSection(e, 'pricing')}>
-            BEGIN
+          <Link to="/wait" className="cta-primary cta-large">
+            Join Waiting List
           </Link>
         </div>
       </section>
