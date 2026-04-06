@@ -44,7 +44,7 @@ export default function Privacy() {
           </section>
           <section className="legal-section">
             <h2 className="legal-section-title">8. Your Rights</h2>
-            <p className="legal-paragraph">You have the right to access, correct, delete your data, and request data portability. To exercise these rights, contact us at <a href="mailto:privacy@shotlee.com" className="legal-link">privacy@shotlee.com</a>.</p>
+            <p className="legal-paragraph">You have the right to access, correct, delete your data, and request data portability. To exercise these rights, contact us at <a href="mailto:hello@shotlee.com" className="legal-link">hello@shotlee.com</a>.</p>
           </section>
           <section className="legal-section">
             <h2 className="legal-section-title">9. Children's Privacy</h2>
@@ -56,7 +56,7 @@ export default function Privacy() {
           </section>
           <section className="legal-section">
             <h2 className="legal-section-title">11. Contact Us</h2>
-            <p className="legal-paragraph"><strong>Email:</strong> <a href="mailto:privacy@shotlee.com" className="legal-link">privacy@shotlee.com</a></p>
+            <p className="legal-paragraph"><strong>Email:</strong> <a href="mailto:hello@shotlee.com" className="legal-link">hello@shotlee.com</a></p>
             <p className="legal-paragraph"><strong>General Inquiries:</strong> <a href="mailto:hello@shotlee.com" className="legal-link">hello@shotlee.com</a></p>
           </section>
         </div>

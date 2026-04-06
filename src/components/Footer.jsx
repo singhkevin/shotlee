@@ -3,10 +3,11 @@ import SocialLinks from './SocialLinks';
 
 const FOOTER_LINKS = [
   { to: '/', label: 'Home' },
-  { to: '/about', label: 'About' },
-  { to: '/contact', label: 'Contact' },
-  { to: '/enhancement-codes', label: 'Pic Options' },
-  { to: '/help', label: 'Help' },
+  { to: '/wait', label: 'Waiting List' },
+  { to: { pathname: '/', hash: 'about' }, label: 'About' },
+  { to: { pathname: '/', hash: 'contact' }, label: 'Contact' },
+  { to: { pathname: '/', hash: 'pic-options' }, label: 'Pic Options' },
+  { to: { pathname: '/', hash: 'help' }, label: 'Help' },
   { to: '/terms', label: 'Terms & Conditions' },
   { to: '/privacy', label: 'Privacy Policy' },
   { to: '/refund', label: 'Refund Policy' },
@@ -19,7 +20,7 @@ export default function Footer() {
       <div className="container">
         <nav className="footer-nav">
           {FOOTER_LINKS.map(({ to, label }) => (
-            <Link key={to} to={to}>
+            <Link key={label} to={to}>
               {label}
             </Link>
           ))}

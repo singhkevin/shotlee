@@ -1,15 +1,11 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Help from './pages/Help';
 import Terms from './pages/Terms';
 import Refund from './pages/Refund';
 import Licensing from './pages/Licensing';
 import Privacy from './pages/Privacy';
-import EnhancementCodes from './pages/EnhancementCodes';
 import NotFound from './pages/NotFound';
 import Waitlist from './pages/Waitlist';
 
@@ -35,14 +31,14 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="help" element={<Help />} />
+          <Route path="about" element={<Navigate to={{ pathname: '/', hash: 'about' }} replace />} />
+          <Route path="contact" element={<Navigate to={{ pathname: '/', hash: 'contact' }} replace />} />
+          <Route path="help" element={<Navigate to={{ pathname: '/', hash: 'help' }} replace />} />
+          <Route path="enhancement-codes" element={<Navigate to={{ pathname: '/', hash: 'pic-options' }} replace />} />
           <Route path="terms" element={<Terms />} />
           <Route path="refund" element={<Refund />} />
           <Route path="licensing" element={<Licensing />} />
           <Route path="privacy" element={<Privacy />} />
-          <Route path="enhancement-codes" element={<EnhancementCodes />} />
           <Route path="wait" element={<Waitlist />} />
           <Route path="*" element={<NotFound />} />
         </Route>

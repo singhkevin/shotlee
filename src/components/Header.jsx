@@ -4,10 +4,10 @@ import SocialLinks from './SocialLinks';
 
 const NAV_LINKS = [
   { to: '/wait', label: 'Waiting List' },
-  { to: '/about', label: 'About' },
-  { to: '/contact', label: 'Contact' },
-  { to: '/enhancement-codes', label: 'Pic Options' },
-  { to: '/help', label: 'Help' },
+  { to: { pathname: '/', hash: 'about' }, label: 'About' },
+  { to: { pathname: '/', hash: 'contact' }, label: 'Contact' },
+  { to: { pathname: '/', hash: 'pic-options' }, label: 'Pic Options' },
+  { to: { pathname: '/', hash: 'help' }, label: 'Help' },
   { to: '/terms', label: 'Terms & Conditions' },
   { to: '/privacy', label: 'Privacy Policy' },
 ];
@@ -54,7 +54,7 @@ export default function Header() {
           </button>
           <nav className={`header-nav ${menuOpen ? 'active' : ''}`} id="main-nav">
             {NAV_LINKS.map(({ to, label }) => (
-              <Link key={to} to={to} onClick={closeMenu}>
+              <Link key={label} to={to} onClick={closeMenu}>
                 {label}
               </Link>
             ))}

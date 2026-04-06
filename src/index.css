@@ -782,6 +782,60 @@ section {
     box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
 }
 
+/* Single-page landing sections (merged from former standalone pages) */
+.landing-about,
+.landing-contact {
+    background: var(--color-white);
+    padding: 6rem 0 5rem;
+}
+
+.landing-pic-options,
+.landing-faq {
+    background: var(--color-gray-light);
+    padding: 6rem 0 6rem;
+}
+
+.landing-pic-options-inner .section-headline {
+    text-align: center;
+}
+
+.landing-pic-options-inner > .body-large {
+    text-align: center;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.landing-faq-inner .section-headline {
+    text-align: center;
+}
+
+.landing-faq-inner > .body-large {
+    text-align: center;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+.landing-faq-group {
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+}
+
+.landing-faq-item {
+    margin-bottom: 1.5rem;
+}
+
+.landing-faq-item .legal-subsection-title {
+    margin-bottom: 0.5rem;
+}
+
+.landing-faq-item .legal-paragraph {
+    margin-bottom: 0;
+}
+
 /* Legal/Terms Page Styles */
 .legal-header {
     background: var(--color-white);
@@ -1220,6 +1274,61 @@ section {
 
 .footer-byline a:hover {
     opacity: 1;
+}
+
+/* 404 Page */
+.not-found {
+    min-height: 60vh;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.not-found-inner {
+    text-align: center;
+    max-width: 480px;
+}
+
+.not-found-logo {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.not-found-logo img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+.not-found-title {
+    font-size: clamp(6rem, 20vw, 12rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: var(--color-black);
+    margin: 0 0 0.5rem;
+}
+
+.not-found-text {
+    font-size: 1.25rem;
+    color: var(--color-black);
+    opacity: 0.8;
+    margin: 0 0 2rem;
+}
+
+.not-found-link {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-red);
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+}
+
+.not-found-link:hover {
+    opacity: 0.85;
 }
 
 /* Animations */

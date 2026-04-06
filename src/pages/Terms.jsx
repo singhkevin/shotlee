@@ -49,7 +49,7 @@ export default function Terms() {
           <section className="legal-section">
             <h2 className="legal-section-title">5. Billing and Payment</h2>
             <ul className="legal-list">
-              <li><strong>Credits.</strong> The Service operates on a credit system. New users receive 10 free enhancement credits. Additional credits are available for purchase at $29 per 100 credits. Each image enhancement consumes one credit.</li>
+              <li><strong>Credits.</strong> The Service operates on a credit system. New users receive 5 free enhancement credits. Additional credits are available for purchase at $29 per 100 credits. Each image enhancement consumes one credit.</li>
               <li><strong>No Expiration.</strong> Credits never expire and may be used at your pace.</li>
               <li><strong>Payment Processing.</strong> Payments are processed through secure third-party payment processors. Shot Lee does not store your full payment card details.</li>
               <li><strong>Refunds.</strong> Full refunds are available within 30 days of purchase if you have used fewer than 20 credits. Refunds are not available for credits already consumed.</li>
@@ -100,7 +100,7 @@ export default function Terms() {
               <li><strong>Assignment.</strong> You may not assign these Terms without Shot Lee's consent. Shot Lee may assign these Terms at any time.</li>
               <li><strong>Severability.</strong> If any provision is found invalid or unenforceable, the remaining provisions continue in full effect.</li>
               <li><strong>Entire Agreement.</strong> These Terms constitute the entire agreement between you and Shot Lee regarding the Service.</li>
-              <li><strong>Contact.</strong> For questions about these Terms, contact legal@shotlee.com.</li>
+              <li><strong>Contact.</strong> For questions about these Terms, contact hello@shotlee.com.</li>
             </ul>
           </section>
           <div className="legal-divider" />

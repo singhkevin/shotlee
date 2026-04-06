@@ -79,7 +79,7 @@ export default function Licensing() {
           </section>
           <section className="legal-section">
             <h2 className="legal-section-title">13. Contact</h2>
-            <p className="legal-paragraph">For questions about this Content License Agreement or to request commercial licensing outside Licensed Territories, contact: <a href="mailto:licensing@shotlee.com" className="legal-link">licensing@shotlee.com</a></p>
+            <p className="legal-paragraph">For questions about this Content License Agreement or to request commercial licensing outside Licensed Territories, contact: <a href="mailto:hello@shotlee.com" className="legal-link">hello@shotlee.com</a></p>
           </section>
           <div className="legal-divider" />
           <p className="legal-acknowledgment">By using Shot Lee to create Enhanced Images, you acknowledge that you have read, understood, and agree to be bound by this Content License Agreement.</p>

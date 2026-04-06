@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import ComparisonSlider from '../components/ComparisonSlider';
+import HelpFaqSection from '../components/HelpFaqSection';
+import PicOptionsSection from '../components/PicOptionsSection';
 import WhatsAppLogo from '../components/WhatsAppLogo';
 
 const COMPARISON_IMAGES = [
@@ -71,7 +73,14 @@ export default function Home() {
             Meet The Greatest Photographer In Human History - You!
           </h1>
           <div className="hero-cta-group">
-<a href="#proposition" className="cta-secondary banner-btn" onClick={(e) => { e.preventDefault(); scrollToSection(e, 'proposition'); }}>
+            <a
+              href="#proposition"
+              className="cta-secondary banner-btn"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(e, 'proposition');
+              }}
+            >
               See how it works
             </a>
             <Link to="/wait" className="cta-secondary banner-btn">
@@ -102,7 +111,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="use-cases fade-in" id="use-cases" ref={(el) => (sectionRefs.current[1] = el)}>
+      <section id="about" className="landing-about fade-in" ref={(el) => (sectionRefs.current[1] = el)}>
+        <div className="container">
+          <div className="proposition-content">
+            <h2 className="section-headline">About Shot Lee</h2>
+            <p className="body-large">
+              Shot Lee exists to close the gap between what you capture and what you envision — so no moment is lost to mediocrity. We built a system that reads images the way masters read light, color, and composition, not just pixels.
+            </p>
+            <p className="body-large">
+              Our enhancement engine draws from the visual language of iconic photography: the contrast that defined Ansel Adams, the composition behind unforgettable portraits, the palettes that stop you mid-scroll. You get real-time processing and four distinct professional interpretations — without us storing your images or selling your data. For the full picture, see our{' '}
+              <Link to="/privacy" className="legal-link">
+                Privacy Policy
+              </Link>
+              .
+            </p>
+            <p className="body-large">
+              Gallery-quality results should be within reach for professionals and families alike. We process, enhance, and deliver — then your originals are gone from our systems. Never accept mediocrity again.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="use-cases fade-in" id="use-cases" ref={(el) => (sectionRefs.current[2] = el)}>
         <div className="container">
           <h2 className="section-headline">The moments that matter</h2>
           <p className="body-large" style={{ textAlign: 'center' }}>
@@ -116,7 +146,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="unforgettable fade-in" ref={(el) => (sectionRefs.current[2] = el)}>
+      <section className="unforgettable fade-in" ref={(el) => (sectionRefs.current[3] = el)}>
         <div className="container">
           <h2 className="section-headline">What makes images unforgettable</h2>
           <div className="unforgettable-content">
@@ -135,7 +165,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="features fade-in" ref={(el) => (sectionRefs.current[3] = el)}>
+      <section className="features fade-in" ref={(el) => (sectionRefs.current[4] = el)}>
         <div className="container">
           <h2 className="section-headline">Excellence, Delivered</h2>
           <div className="features-grid">
@@ -161,7 +191,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="pricing" className="pricing fade-in" ref={(el) => (sectionRefs.current[4] = el)}>
+      <section id="pic-options" className="landing-pic-options fade-in" ref={(el) => (sectionRefs.current[5] = el)}>
+        <div className="container">
+          <PicOptionsSection />
+        </div>
+      </section>
+
+      <section id="pricing" className="pricing fade-in" ref={(el) => (sectionRefs.current[6] = el)}>
         <div className="container">
           <div className="pricing-wrapper">
             <div className="pricing-header">
@@ -188,7 +224,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="privacy fade-in" ref={(el) => (sectionRefs.current[5] = el)}>
+      <section id="privacy" className="privacy fade-in" ref={(el) => (sectionRefs.current[7] = el)}>
         <div className="container">
           <div className="privacy-wrapper">
             <h2 className="section-headline">Your Privacy, Absolute</h2>
@@ -227,7 +263,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="final-cta fade-in" ref={(el) => (sectionRefs.current[6] = el)}>
+      <section id="help" className="landing-faq fade-in" ref={(el) => (sectionRefs.current[8] = el)}>
+        <div className="container">
+          <HelpFaqSection />
+        </div>
+      </section>
+
+      <section id="contact" className="landing-contact fade-in" ref={(el) => (sectionRefs.current[9] = el)}>
+        <div className="container">
+          <div className="proposition-content">
+            <h2 className="section-headline">Contact</h2>
+            <p className="body-large">
+              Questions, partnerships, or feedback? Reach us at{' '}
+              <a href="mailto:hello@shotlee.com" className="legal-link">
+                hello@shotlee.com
+              </a>
+              . For how-to questions, see <a href="#help" className="legal-link">Help &amp; FAQ</a> above.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="final-cta fade-in" ref={(el) => (sectionRefs.current[10] = el)}>
         <div className="container">
           <h2 className="section-headline">Start now.</h2>
           <p className="cta-subtext">

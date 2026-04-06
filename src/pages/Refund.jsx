@@ -10,7 +10,7 @@ export default function Refund() {
           </div>
           <section className="legal-section">
             <h2 className="legal-section-title">1. Credit System</h2>
-            <p className="legal-paragraph">Shot Lee operates on a credit-based system. Each image enhancement consumes one credit. New users receive 10 free enhancement credits upon account creation. Additional credits may be purchased in packages.</p>
+            <p className="legal-paragraph">Shot Lee operates on a credit-based system. Each image enhancement consumes one credit. New users receive 5 free enhancement credits upon account creation. Additional credits may be purchased in packages.</p>
             <p className="legal-paragraph"><strong>Credit Expiration:</strong> Credits never expire and may be used at your own pace. There is no time limit on when you must use purchased credits.</p>
           </section>
           <section className="legal-section">
@@ -26,7 +26,7 @@ export default function Refund() {
             <h2 className="legal-section-title">3. Refund Process</h2>
             <p className="legal-paragraph">To request a refund:</p>
             <ul className="legal-list">
-              <li>Email <a href="mailto:support@shotlee.com" className="legal-link">support@shotlee.com</a> with your refund request</li>
+              <li>Email <a href="mailto:hello@shotlee.com" className="legal-link">hello@shotlee.com</a> with your refund request</li>
               <li>Include your account email address and the date of purchase</li>
               <li>Specify the number of credits you have used from the purchased package</li>
             </ul>
@@ -45,11 +45,11 @@ export default function Refund() {
           <section className="legal-section">
             <h2 className="legal-section-title">5. Service Cancellation</h2>
             <p className="legal-paragraph">You may stop using Shot Lee at any time. There is no subscription to cancel—you simply stop purchasing and using credits.</p>
-            <p className="legal-paragraph"><strong>Account Deletion:</strong> You may request account deletion at any time by contacting <a href="mailto:support@shotlee.com" className="legal-link">support@shotlee.com</a>. Upon account deletion, any remaining unused credits will be forfeited and are not eligible for refund.</p>
+            <p className="legal-paragraph"><strong>Account Deletion:</strong> You may request account deletion at any time by contacting <a href="mailto:hello@shotlee.com" className="legal-link">hello@shotlee.com</a>. Upon account deletion, any remaining unused credits will be forfeited and are not eligible for refund.</p>
           </section>
           <section className="legal-section">
             <h2 className="legal-section-title">6. Disputes and Chargebacks</h2>
-            <p className="legal-paragraph">If you believe you are entitled to a refund but your request has been denied, please contact us at <a href="mailto:support@shotlee.com" className="legal-link">support@shotlee.com</a> to discuss your situation. We are committed to fair resolution of disputes.</p>
+            <p className="legal-paragraph">If you believe you are entitled to a refund but your request has been denied, please contact us at <a href="mailto:hello@shotlee.com" className="legal-link">hello@shotlee.com</a> to discuss your situation. We are committed to fair resolution of disputes.</p>
             <p className="legal-paragraph">Filing a chargeback with your payment provider without first contacting us may result in immediate account suspension. We encourage direct communication to resolve any issues.</p>
           </section>
           <section className="legal-section">
@@ -58,7 +58,7 @@ export default function Refund() {
           </section>
           <section className="legal-section">
             <h2 className="legal-section-title">8. Contact</h2>
-            <p className="legal-paragraph">For questions about refunds or cancellations, contact us at <a href="mailto:support@shotlee.com" className="legal-link">support@shotlee.com</a>.</p>
+            <p className="legal-paragraph">For questions about refunds or cancellations, contact us at <a href="mailto:hello@shotlee.com" className="legal-link">hello@shotlee.com</a>.</p>
           </section>
         </div>
       </div>
