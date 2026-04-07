@@ -1,31 +1,35 @@
 const PLANS = [
   {
     name: 'Free',
-    accent: 'peach',
+    tone: 'free',
     inr: '—',
     validity: '10 days',
     credits: '10',
+    paymentUrl: '#',
   },
   {
     name: 'Essential',
-    accent: 'sage',
+    tone: 'essential',
     inr: '₹499',
     validity: '30 days',
     credits: '50',
+    paymentUrl: '#',
   },
   {
     name: 'Elite',
-    accent: 'peach',
+    tone: 'elite',
     inr: '₹799',
     validity: '90 days',
     credits: '100',
+    paymentUrl: '#',
   },
   {
     name: 'Diamond',
-    accent: 'sage',
+    tone: 'diamond',
     inr: '₹999',
     validity: '300 days',
     credits: '200',
+    paymentUrl: '#',
   },
 ];
 
@@ -49,30 +53,29 @@ export default function PricingIndia() {
               Each paid tier includes a <strong>validity window</strong> (time to use your credits) and a{' '}
               <strong>credit allowance</strong> for enhancements. One credit is one enhancement run.
             </p>
-            <div className="pricing-international-wrap">
-              <table className="pricing-international-table">
-                <caption className="pricing-international-caption">
-                  All prices in INR, inclusive of GST — India only — nothing added at checkout
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Plan</th>
-                    <th scope="col">INR</th>
-                    <th scope="col">Validity</th>
-                    <th scope="col">Credits</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {PLANS.map((plan) => (
-                    <tr key={plan.name} className={`pricing-international-row pricing-international-row--${plan.accent}`}>
-                      <th scope="row">{plan.name}</th>
-                      <td>{plan.inr}</td>
-                      <td>{plan.validity}</td>
-                      <td>{plan.credits}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <p className="pricing-international-caption">
+              All prices in INR, inclusive of GST — India only — nothing added at checkout
+            </p>
+            <div className="pricing-card-grid">
+              {PLANS.map((plan) => (
+                <article key={plan.name} className={`pricing-card pricing-card--${plan.tone}`}>
+                  <h3 className="pricing-card-title">{plan.name}</h3>
+                  <p className="pricing-card-price">{plan.inr}</p>
+                  <dl className="pricing-card-meta">
+                    <div className="pricing-card-meta-row">
+                      <dt>Validity</dt>
+                      <dd>{plan.validity}</dd>
+                    </div>
+                    <div className="pricing-card-meta-row">
+                      <dt>Credits</dt>
+                      <dd>{plan.credits}</dd>
+                    </div>
+                  </dl>
+                  <a href={plan.paymentUrl} className="pricing-card-cta" aria-label={`Pay now for ${plan.name} plan`}>
+                    Pay now
+                  </a>
+                </article>
+              ))}
             </div>
             <p className="legal-paragraph pricing-international-footnote">
               Free tier: no charge; credits must be used within the validity period. Renew or upgrade before credits expire
